@@ -1,7 +1,7 @@
 class TRoutingHelper {
   static const String start = '/';
   static const String dashboard = '/dashboard';
-  static const String media = '/media-screen';
+  static const String media = '/media';
   static const String banner = '/banner-screen';
   static const String loginInScreen = '/login';
   static const String successScreen = '/success-screen';
@@ -24,4 +24,5 @@ class TRoutingHelper {
   static const String allProductScreen = '/AllProductScreen ';
   static const String brandScreen = '/BrandScreen ';
   static const String allBrandScreen = '/AllBrandScreen ';
+  static List sidebarMenuItems = [dashboard, media];
 }

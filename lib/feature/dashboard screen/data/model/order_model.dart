@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'package:yt_ecommerce_admin_panel/core/utils/constants/enums.dart';
+import 'package:yt_ecommerce_admin_panel/core/utils/helpers/helper_functions.dart';
 
 class OrderModel extends Equatable {
   final String id;
@@ -8,12 +9,24 @@ class OrderModel extends Equatable {
   final DateTime orderDate;
   final DateTime deliveryDate;
 
-  OrderModel(
+  const OrderModel(
       {required this.id,
       required this.status,
       required this.totalAmount,
       required this.orderDate,
       required this.deliveryDate});
+
+  String get formattedOrderDate => THelperFunctions.getFormattedDate(orderDate);
+
+  String get formattedDeliveryDate => deliveryDate != null
+      ? THelperFunctions.getFormattedDate(deliveryDate!)
+      : '';
+
+  String get orderStatusText => status == OrderStatus.delivered
+      ? 'Deliverd'
+      : status == OrderStatus.shipped
+          ? 'Shipment on the way'
+          : 'Processing';
 
   factory OrderModel.fromJson(Map<String, dynamic> json) {
     return OrderModel(
