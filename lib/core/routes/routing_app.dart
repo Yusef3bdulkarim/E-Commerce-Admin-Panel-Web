@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:yt_ecommerce_admin_panel/core/routes/routing_helper.dart';
 import 'package:yt_ecommerce_admin_panel/feature/dashboard%20screen/UI/screen/dashboard_screen.dart';
+import 'package:yt_ecommerce_admin_panel/feature/media/UI/screen/media_screen.dart';
 
 import '../../feature/authentication/UI/screen/forget_password/forget_password_screen.dart';
 import '../../feature/authentication/UI/screen/login/login_screen.dart';
@@ -36,8 +37,7 @@ final GoRouter appRouter = GoRouter(
         ),
         GoRoute(
           path: TRoutingHelper.media,
-          builder: (context, state) =>
-              const Center(child: Text("Media Screen")),
+          builder: (context, state) => const MediaScreen(),
         ),
         GoRoute(
           path: TRoutingHelper.banner,
