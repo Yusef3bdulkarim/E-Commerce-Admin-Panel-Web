@@ -4,10 +4,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:yt_ecommerce_admin_panel/feature/authentication/logic/auth_cubit.dart';
 import 'package:yt_ecommerce_admin_panel/feature/dashboard%20screen/logic/dashboard_cubit.dart';
-import 'package:yt_ecommerce_admin_panel/feature/media/logic/media_cubit.dart';
+
 import 'app.dart';
 import 'core/common/widgets/data_table/table_controller/table_controller_cubit.dart';
 import 'core/service_git_it/service_locator.dart';
+import 'feature/media_screen/logic/media_cubit.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {

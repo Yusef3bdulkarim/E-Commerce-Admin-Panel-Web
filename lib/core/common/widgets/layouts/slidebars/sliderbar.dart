@@ -49,18 +49,34 @@ class TSliderbar extends StatelessWidget {
                     ),
                     const TMenuItem(
                       text: 'Dashboard',
-                      icon: Iconsax.menu,
+                      icon: Iconsax.status,
                       route: TRoutingHelper.dashboard,
                     ),
                     const TMenuItem(
                       text: 'Media',
-                      icon: Iconsax.menu,
+                      icon: Iconsax.image,
                       route: TRoutingHelper.media,
+                    ),
+
+                    const TMenuItem(
+                      text: 'Category',
+                      icon: Iconsax.category_2,
+                      route: TRoutingHelper.categoryScreen,
+                    ),
+                    const TMenuItem(
+                      text: 'Brands',
+                      icon: Iconsax.dcube,
+                      route: TRoutingHelper.brandScreen,
                     ),
                     const TMenuItem(
                       text: 'Banner',
-                      icon: Iconsax.menu,
-                      route: TRoutingHelper.banner,
+                      icon: Iconsax.picture_frame,
+                      route: TRoutingHelper.bannerScreen,
+                    ),
+                    const TMenuItem(
+                      text: 'logout',
+                      icon: Iconsax.logout,
+                      route: TRoutingHelper.bannerScreen,
                     ),
                   ],
                 ),
