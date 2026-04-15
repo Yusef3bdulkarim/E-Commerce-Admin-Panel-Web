@@ -5,9 +5,9 @@ import 'package:get_it/get_it.dart';
 import 'package:yt_ecommerce_admin_panel/feature/authentication/data/repo/auth_repo.dart';
 import 'package:yt_ecommerce_admin_panel/feature/authentication/logic/auth_cubit.dart';
 import 'package:yt_ecommerce_admin_panel/feature/dashboard%20screen/logic/dashboard_cubit.dart';
-import 'package:yt_ecommerce_admin_panel/feature/media/data/repo/media_repo.dart';
-import 'package:yt_ecommerce_admin_panel/feature/media/logic/media_cubit.dart';
 
+import '../../feature/media_screen/data/repo/media_repo.dart';
+import '../../feature/media_screen/logic/media_cubit.dart';
 import '../common/widgets/data_table/table_controller/table_controller_cubit.dart';
 
 final getIt = GetIt.instance;

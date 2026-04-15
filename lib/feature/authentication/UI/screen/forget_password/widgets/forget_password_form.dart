@@ -86,7 +86,7 @@ class _TForgetPasswordFormState extends State<TForgetPasswordForm> {
                           await context.read<AuthCubit>().createNewAdmin(
                               newAdmin: AuthModel(
                                   userName: "Ali123",
-                                  email: "ali@media.com", // جرب إيميل جديد خالص
+                                  email: "ali@media_screen.com", // جرب إيميل جديد خالص
                                   role: AppRole.admin,
                                   firstName: "Ali",
                                   lastName: "Hamada"),
